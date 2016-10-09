@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('contact');
+  this.route('president');
+  //this.route('wordCount')
+  this.route('wordCount', { path: '/wordCount/:count_id' });
 });
 
 export default Router;
